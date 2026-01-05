@@ -55,12 +55,11 @@ body {
 
 .card {
     background: white;
-    
-    width: 100%;
+    width: 380px;          /* Normal desktop size */
     padding: 30px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
 
@@ -97,4 +96,11 @@ body {
 
 .card button:hover {
     background: #5a67d8;
+}
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;       /* Prevent image distortion */
+    border-radius: 12px;
+    margin-bottom: 15px;
 }
