@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+        
+            a=document.getElementsByTagName("input")[0].value;
+            b=document.getElementsByTagName("input")[1].value;
+            document.getElementById("result").innerHTML= parseInt(a) + parseInt(b);
+            return parseInt(a) + parseInt(b);
+        }
+        function sub(){
+        
+            a=document.getElementsByTagName("input")[0].value;
+            b=document.getElementsByTagName("input")[1].value;
+            document.getElementById("result").innerHTML= parseInt(a) - parseInt(b);
+            return parseInt(a) - parseInt(b);
+        }
+        function multi(){
+        
+            a=document.getElementsByTagName("input")[0].value;
+            b=document.getElementsByTagName("input")[1].value;
+            document.getElementById("result").innerHTML= parseInt(a) * parseInt(b);
+            return parseInt(a) * parseInt(b);
+        }
+        function div(){
+        
+            a=document.getElementsByTagName("input")[0].value;
+            b=document.getElementsByTagName("input")[1].value;
+            document.getElementById("result").innerHTML= parseInt(a) / parseInt(b);
+            return parseInt(a) / parseInt(b);
+        }
+
+    </script>
+</head>
+<body>
+    <div class="box">
+        <h2>Calculator</h2>
+    First Number :<input type="number" placeholder="firstnumber"><br>
+    Second Number :<input type="number" placeholder="secondnumber">
+    <hr>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="multi()">*</button>
+    <button onclick="div()">/</button>
+    <hr>
+    <p>Result is : <span id="result"></span></p>
+    </div>
+</body>
+</html>

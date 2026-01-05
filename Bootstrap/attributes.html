@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Demo</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ 
+   
+</head>
+ 
+<body>
+<button id="btn">Hide Text</button>
+ 
+<script>
+    $(document).ready(function () {
+        $("#btn").click(function () {
+        $("p").css("color", "red");
+        $("h2").hide();
+        $("#box").hide();
+        $("input [type='text']").val("Hello");
+ 
+        });
+    });
+</script>
+    <p>Hello, this is jQuery!!</p>
+    <h2>this is h2 text</h2>
+
+    <div class="container">
+        <input type="text"> </div>
+ 
+</body>
+</html>
+ 

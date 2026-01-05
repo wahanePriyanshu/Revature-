@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Stack</title>
+</head>
+<body>
+    <script>
+        function f1(){
+
+            document.writeln("function f1() <br>");
+        }
+        function f2(){
+
+            document.writeln("function f2() <br>");
+        }
+        function f3(){
+         document.writeln("function f3() <br>");   
+        }
+        f1();
+        f2();
+        f3();
+        function infinite(){
+            infinite();
+        }
+        console.log("started");
+        setTimeout(()=>{
+            console.log("calling infinite()");
+            
+            
+        },300);
+        console.log("end infinite()");
+        
+    </script>
+</body>
+</html>

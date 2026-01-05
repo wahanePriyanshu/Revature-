@@ -30,25 +30,25 @@ console.log("End");
 
 //Task 2-  Callback Queue (0ms timeout)
 
-// Why ads load later even with 0ms?
+Why ads load later even with 0ms?
 
-// setTimeout(0) does not mean instant execution
+setTimeout(0) does not mean instant execution
 
-// It waits until:
+It waits until:
 
-// Call Stack is empty
+Call Stack is empty
 
-// Main content finishes loading
+Main content finishes loading
 
-// Event Loop then pushes callback from Callback Queue
+Event Loop then pushes callback from Callback Queue
 
-// Ensures non-blocking UI
+Ensures non-blocking UI
 
 // ***************************************************************************
 
 //Task 3 - JSON.parse()
 
-// Convert string to object & access name
+Convert string to object & access name
 
 const response = '{"id":101,"name":"Laptop","price":50000}';
 
@@ -60,7 +60,7 @@ console.log(obj.name); // Laptop
 
 // Task 4- JSON.stringify()
 
-// Convert object to JSON string
+Convert object to JSON string
 
 const user = { username: "admin", role: "manager" };
 
@@ -90,7 +90,7 @@ const discounted = prices.map(price => price * 0.9);
 console.log(discounted);
 
 
-  // return a new  array
+  =>Returns a new array
 
   //*******************************************************************
   
@@ -115,7 +115,7 @@ const total = cart.reduce((sum, price) => sum + price, 0);
 console.log(total);
 
 
-  // Used for sum, total, aggregation
+ => Used for sum, total, aggregation
 
 //  **********************************************************************************************
 
@@ -154,7 +154,7 @@ console.log(myCounter()); // 1
 console.log(myCounter()); // 2
 
 
-//  => count cannot be accessed directly from outside
+ => count cannot be accessed directly from outside
 
 //  **********************************************************************************************************
 

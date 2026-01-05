@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const number = [101, 102, 103, 104, 105, 106];
+        number.forEach(i => {
+            console.log(i);
+        })
+        number.forEach((i, index, ar) => {
+            ar[index] = i + 1;
+        });
+        console.log(number);
+        const even = number.filter(i=>i%2===0);
+        console.log(even);
+
+        const newmap = even.map( i=>i*2);
+        console.log(newmap);
+
+    </script>
+
+</body>
+
+</html>

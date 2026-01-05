@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="script.js"></script> -->
+     <script>
+        function welcomemessage(){
+            alert("Welcome to exercise 1");
+            console.log("click button");
+        }
+        function parameter(a,b){
+            alert("Welcome to exercise 1");
+            console.log(a+b);
+        }
+
+        function add(){
+            a = document.getElementsByTagName("input")[0].value;
+            b = document.getElementsByTagName("input")[1].value;
+            document.getElementById("result").innerHTML=parseInt(a) + parseInt(b);
+            return parseInt(a)+parseInt(b);
+        }
+
+
+     </script>
+</head>
+<body>
+    <h1>Welcome to exercise 11</h1>
+    <p>This is exercise one in js</p>
+    <button onclick="welcomemessage()">Click</button>
+    <button onclick="parameter(10,50)">Click</button>
+    <hr>
+
+    <input type="number" placeholder="first number"><br>
+    <input type="number" placeholder="second number">
+    <button onclick="add()">Add</button>
+    <p>sum is <span id="result"></span></p>
+</body>
+</html>

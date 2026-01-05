@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+
+<body>
+    <script>
+        function outer() {
+
+            let ctr = 0;
+            console.log("outer ",ctr);
+            function inner() {
+                ctr++;
+                console.log("inner :",ctr);
+                function innermost() {
+                    ctr++;
+                    console.log("innermost",ctr);
+
+                }
+                return innermost
+            }
+            return inner;
+        }
+        const valueofcounter = outer();
+        valueofcounter();
+        valueofcounter();
+    </script>
+
+</body>
+
+</html>

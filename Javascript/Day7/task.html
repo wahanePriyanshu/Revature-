@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Sum & Max</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input, button {
+      padding: 8px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Enter Numbers (comma separated)</h2>
+
+  <input type="text" id="numbers" placeholder="e.g. 10,20,5,40,15">
+  <br><br>
+  <button onclick="calculate()">Calculate</button>
+
+  <p id="result"></p>
+
+  <script>
+    function calculate() {
+      
+      let input = document.getElementById("numbers").value;
+
+      
+      let arr = input.split(",").map(Number);
+
+      let sum = 0;
+      let max = arr[0];
+
+    
+      for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        if (arr[i] > max) {
+          max = arr[i];
+        }
+      }
+
+     
+      document.getElementById("result").innerHTML =
+        "Array: " + arr + "<br>" +
+        "Sum of numbers: " + sum + "<br>" +
+        "Maximum number: " + max;
+    }
+  </script>
+
+</body>
+</html>
+
